@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Movie Seat Booking</title>
+</head>
+<body>
+<main>
+    <div class="movies-ticket container">
+        <div class="movie-info">
+            <div class="movie">Movie: Marvels</div>
+            <div class="price" data-price="5">
+                $5
+            </div>
+            <div class="session">
+                <ul>
+                    <li data-time="10">10:00</li>
+                    <li data-time="12">12:00</li>
+                    <li data-time="14">14:00</li>
+                    <li data-time="16">16:00</li>
+                    <li data-time="18">18:00</li>
+                    <li data-time="20">20:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ul class="seats-marker container">
+        <li><span class="seat-marker na"></span>N/A</li>
+        <li><span class="seat-marker selected"></span>Selected</li>
+        <li><span class="seat-marker reserved"></span>Reserved</li>
+    </ul>
+    <div class="cinema-hall">
+        <div class="screen">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 806 21" fill="#ffffff">
+                <path d="M3.2,20l-2,0.2l-0.3-4l2-0.2C136.2,5.3,269.6,0,403,0s266.8,5.3,400.2,16l2,0.2l-0.3,4l-2-0.2 C669.5,9.3,536.3,4,403,4S136.4,9.3,3.2,20z"></path>
+            </svg>
+        </div>
+        <div class="seats">
+            <div class="seat-column">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="seat-column">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+            </div>
+            <div class="seat-column">
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="seat-column">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="seat-column">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat reserved"></div>
+                <div class="seat reserved"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <div class="total-count">
+            <div>Selected seat(s):  <span id="seats-count">0</span></div>
+            <div>Price: $<span id="total">0</span></div>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
